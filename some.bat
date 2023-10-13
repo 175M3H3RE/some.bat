@@ -1,14 +1,17 @@
+IF /i "%~1" neq "/c" goto EQUALIT
 REM BHENCHOD CHAMMAK CHALLO
+:EQUALIT
 REM I AM CHRISTIAN.......
 @echo off
+
 set gotcha=%1
 REM if %gotcha%==1 echo.Sachin Mathhews says "Gotcha!" * points-fingers*&PAUSE
-set mylordthemotherfucker=%1
+set mylordthemotherfucker=%~1
 set motherfucker=%mylordthemotherfucker%
 set /a counter=0
 set string=%~1
 set /a exit=1
-if "%motherfucker%"=="/c" goto notwords
+if /i "%motherfucker%"=="/c" goto notwords
 
 
 :loop
